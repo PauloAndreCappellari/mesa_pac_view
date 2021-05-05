@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Locais</title>
+    </head>
+    <body>
+
+        <ul>
+        @each(place in places)
+            <li> Usuário: {{ place.user_id }}; Nome: {{ place.name }}; Descrição: {{ place.description }}; Lat/Lng: {{ place.lat }},{{ place.lng }}; Endereço : {{ place.address }} </li>
+        @endeach
+        </ul>
+    
+  </body>
+</html>

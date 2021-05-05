@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PAC-MESA</title>
+  {{ style('style') }}
+</head>
+<body>
+  <section>
+    <div class="title"></div>
+    <div class="subtitle">
+      
+      @loggedIn
+        <h2> Olá {{ auth.user.username }} </h2>
+        Escolha uma opção abaixo:
+        <p><a href=/profile> Visualizar meu perfil </a></p>
+        <p><a href=/places> Visualizar lista de locais </a></p>
+        <p><a href=/logout> Sair </a></p>
+
+      @else
+        <p>Bem vindo à pagina de teste do PAC</p>
+        <p> Por favor, <a href=/login> realize login </a> ou <a href=/createuser> crie um novo usário</a></p>
+      @endloggedIn
+
+
+      <p>
+
+
+      </p>
+    </div>
+  </section>
+</body>
+</html>
